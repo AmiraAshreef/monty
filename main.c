@@ -7,13 +7,13 @@
 #include "execute.h"
 #include <stdio.h>
 bus_t bus = {NULL, NULL, NULL, 0};
-size_t getline(char **lineptr, size_t *n, FILE *stream);
+
 /**
-* main - monty code interpreter
-* @argc: number of arguments
-* @argv: monty file location
-* Return: 0 on success
-*/
+ * main - monty code interpreter
+ * @argc: number of arguments
+ * @argv: monty file location
+ * Return: 0 on success
+ */
 int main(int argc, char *argv[])
 {
 	char *content;
@@ -49,5 +49,5 @@ int main(int argc, char *argv[])
 	}
 	free_stack(stack);
 	fclose(file);
-return (0);
+	return (0);
 }

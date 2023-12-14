@@ -2,23 +2,23 @@
 #define EXECUTE_H
 #include "monty.h"
 /**
-* execute - executes the opcode
-* @stack: head linked list - stack
-* @counter: line_counter
-* @file: poiner to monty file
-* @content: line content
-* Return: no return
-*/
+ * execute - executes the opcode
+ * @stack: head linked list - stack
+ * @counter: line_counter
+ * @file: poiner to monty file
+ * @content: line content
+ * Return: no return
+ */
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
 	instruction_t opst[] = {
-				{"push", f_push}, {"pall", f_pall}, {"pint", f_pint},
-				{"pop", f_pop},
-				{"swap", f_swap},
-				{"add", f_add},
-				{"nop", f_nop},
-				{NULL, NULL}
-				};
+		{"push", f_push}, {"pall", f_pall}, {"pint", f_pint},
+		{"pop", f_pop},
+		{"swap", f_swap},
+		{"add", f_add},
+		{"nop", f_nop},
+		{NULL, NULL}
+	};
 	unsigned int i = 0;
 	char *op;
 
