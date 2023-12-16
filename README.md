@@ -1,2 +1,2 @@
-Author => braaabdelmoaty3 , AmiraAshreef
+Author => braaabdelmoaty3 , AmiraAshreef.
  Stacks, Queues - LIFO, FIFO
